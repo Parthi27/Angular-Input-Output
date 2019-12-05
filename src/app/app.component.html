@@ -1,2 +1,2 @@
-<input [(ngModel)]="name" (keyup)="save(name)">
-<app-child [name]="name" (notify)="onNotify(name)"></app-child>
+<!-- <input [(ngModel)]="name" (keyup)="save(name)"> -->
+<app-child [name]="name" [data]="data" (notify)="notify($event)"></app-child>

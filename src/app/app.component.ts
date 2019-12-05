@@ -6,14 +6,68 @@ import { Component, OnInit} from '@angular/core';
   styleUrls: [ './app.component.css' ]
 })
 export class AppComponent  {
+
+data:any;
 name: any;
-  save(a){
-  this.name = a;
-  console.log(this.name);
+ 
+ngOnInit(){
+  this.data = [{
+    'Name':"Parthi",
+     'Age': 20},
+
+{
+   'Name':"Parthi",
+     'Age': 20
+
+  },{
+   'Name':"Parthi",
+     'Age': 20
+
+  },{
+   'Name':"Parthi",
+     'Age': 20
+
+  },{
+    'Name':"Parthi",
+     'Age': 20
+
+  },{
+    'Name':"Parthi",
+     'Age': 20
+
+  },{
+    'Name':"Parthi",
+     'Age': 20
+
+  },{
+    'Name':"Parthi",
+     'Age': 20
+
+  },{
+   'Name':"Parthi",
+     'Age': 20
+
+  },{
+    'Name':"Parthi",
+     'Age': 20
+
+  },{
+    'Name':"Parthi",
+     'Age': 20
+
+  },{
+  'Name':"Parthi",
+     'Age': 20
+
+  },{
+    'Name':"Parthi",
+     'Age': 20
+  },
+]
 }
- onNotify(k) {
-   window.alert(k);
-    window.alert("You will be notified when the product goes on sale");
+
+ notify() {
+ alert("bdf");
   }
 }
 

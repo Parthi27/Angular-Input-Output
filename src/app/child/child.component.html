@@ -1,2 +1,20 @@
 <p>{{name}}</p>
-<button (click)="notify.emit()">Notify Me</button>
+<button (click)="childnotify()">Notify Me</button>
+<table>
+  <tr>
+    <th>Name</th>
+     <th>Age</th>
+     <th>Action</th>
+    </tr>
+  <tr  *ngFor="let idata of data">
+    <td>
+      <input [(ngModel)] =idata.Name>
+     </td>
+     <td>
+     <input [(ngModel)] =idata.Age>
+       </td>
+     <td>
+       <button (click)="tableEdit(idata,data)">Edit</button>
+     </td>
+  </tr>
+</table>
